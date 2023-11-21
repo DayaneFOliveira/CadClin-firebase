@@ -1,0 +1,37 @@
+/* Estilo do Projeto */
+
+.login{
+    width: 100%;
+    background: linear-gradient(to bottom, #d5eef7,#7ed2ee); /*cores de fundo levemente azul com gradiante */
+    font-family: 'Outfit', sans-serif;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 60px; 
+    margin-bottom: 60px; 
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(to bottom, #d5eef7,#a4dff3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o gradiente cubra a altura total da tela */
+}
+
+.login-container {
+    width: 380px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #e6e6e6;
+    background: linear-gradient(to bottom, #d5eef7,#a3daec);
+    border-radius: 12px;
+}
+
+.card-header{
+    background: linear-gradient(to bottom, #d5eef7,#a3daec);
+}

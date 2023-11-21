@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- Ícones Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Para consultar a lista de ícones, acesse: https://icons.getbootstrap.com/ -->
+    <!-- CSS -->
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link href="images/logo.png" rel="icon" type="image/png" />
+    <title>Love Pets</title>
+</head>
+
+<body class="login">
+    <!-- Logo da clínica -->
+    <div class="text-center">
+        <img src="images/logo.png" title="Love Pets" alt="logo da Clinica" class="w-40" width="100" />
+        <h2>Love Pets</h2> <!-- Nome da clinica-->
+        <legend class="small fw-bold">Insira seus dados para fazer Login ✔️</legend> <!-- Subtitulo antes dor formulario -->
+        <br>
+    </div>
+    <!-- Formulário de login -->
+    <div class="login-container">
+        <form id="formLogin">
+            <!-- Campo de email na tela de Login -->
+            <div class="mb-3">
+                <label for="email" class="fw-bold col-sm-11 text-start" >E-mail:</label>
+                <input type="text" class="form-control" id="email" name="email" required autofocus placeholder="E-mail"
+                    title="Informe seu E-mail cadastrado" />
+            </div>
+            <!-- Campo de senha na tela de Login  -->
+            <div class="mb-3">
+                <label for="senha" class="fw-bold col-sm-11 text-start" >Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha" required placeholder="******"
+                    title="Senha do cadastro" maxlength="10" />
+            </div>
+            <!-- Botão de login na tela de Login  -->
+            <button class="btn text-bg-success" id="login" type="submit">
+                <i class="bi bi-person-fill"></i> Login
+            </button>
+        </form>
+        <hr>
+        <!-- Botão de login com Google na tela de Login  -->
+        <div>
+            <button class="btn btn-outline-primary mx-2" id="loginGoogle" onclick="logaGoogle()" title="Login Google"><i
+                    class="bi bi-google"></i> Entrar com Google</button>
+        </div>
+        <!-- Link para cadastro na tela de Login  -->
+        <div class="mt-3">
+            Não tem uma conta? <a href="CadUsuario.html">Cadastre-se</a>
+        </div>
+    </div>
+
+    <!-- Carregando os scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-storage-compat.js"></script>
+    <!--script do projeto -->
+    <script src="js/firebase.js"></script>
+    <script src="js/login.js"></script>
+    
+</body>
+
+</html>
