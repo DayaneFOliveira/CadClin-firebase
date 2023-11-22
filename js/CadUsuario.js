@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 
 //Definindo a URL padrão do site
-const urlApp = 'https://dayanefoliveira.github.io/CadClin-firebase/'
+const urlApp = 'https://dayanefoliveira.github.io/CadClin-firebase'
 
 // Referência para o formulário de cadastro no HTML
 const formCadastro = document.getElementById('formCadastro')
